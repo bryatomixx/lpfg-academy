@@ -15,22 +15,26 @@ const steps = [
 
 export default function S10ProduceQuick() {
   return (
-    <section id="producir" className="bg-[#071020] py-24 px-6">
+    <section id="producir" className="bg-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-16">
             <SectionLabel>Sistema de producción</SectionLabel>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Cómo producir rápido sin improvisar</h2>
-            <p className="text-white/50 text-lg max-w-2xl mx-auto">Este es tu sistema operativo inicial como productor. No es teórico — es lo que funciona.</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1B2631] mb-6">
+              Cómo producir con estructura
+            </h2>
+            <p className="text-[#4A4A4A] text-lg max-w-2xl mx-auto">
+              Este es tu sistema operativo inicial como productor. No es teórico — es lo que funciona.
+            </p>
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {steps.map((s) => (
             <AnimatedSection key={s.n}>
-              <div className="bg-white/3 border border-white/8 rounded-2xl p-6 hover:border-[#C9A84C]/25 hover:bg-[#C9A84C]/4 transition-all duration-300 h-full">
-                <span className="text-[#C9A84C]/30 font-black text-4xl block mb-3">{s.n}</span>
-                <h3 className="text-white font-bold text-base mb-2">{s.title}</h3>
-                <p className="text-white/45 text-sm leading-relaxed">{s.desc}</p>
+              <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 hover:shadow-md transition-all duration-300 h-full shadow-sm">
+                <span className="text-[#C5A059]/30 font-black text-4xl block mb-3">{s.n}</span>
+                <h3 className="text-[#1B2631] font-bold text-base mb-2">{s.title}</h3>
+                <p className="text-[#4A4A4A] text-sm leading-relaxed">{s.desc}</p>
               </div>
             </AnimatedSection>
           ))}
