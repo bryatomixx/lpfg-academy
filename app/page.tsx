@@ -2,6 +2,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import CTABanner from '@/components/ui/CTABanner'
 import S01Hero from '@/components/sections/S01Hero'
+import S02Authority from '@/components/sections/S02Authority'
 import S02WhatIsAcademy from '@/components/sections/S02WhatIsAcademy'
 import S03Ecosystem from '@/components/sections/S03Ecosystem'
 import S04Industry from '@/components/sections/S04Industry'
@@ -24,6 +25,7 @@ export default function AcademyPage() {
       <Navbar />
       <main>
         <S01Hero />
+        <S02Authority />
         <S02WhatIsAcademy />
         <S03Ecosystem />
         <S04Industry />
@@ -40,10 +42,10 @@ export default function AcademyPage() {
         <S15Roadmap />
         <S16WhatIsNext />
         <CTABanner
-          headline="Estás listo para empezar."
-          sub="Tienes el mapa. Tienes las herramientas. Tienes el equipo. Solo falta la acción."
-          cta="Comenzar Academia"
-          href="#inicio"
+          headline="Estás listo para el siguiente paso."
+          sub="Si buscas una plataforma con estructura, mentoría, sistemas y visión a largo plazo — agenda una conversación con nuestro equipo."
+          cta="Agendar una Conversación"
+          href="#contacto"
         />
       </main>
       <Footer />
