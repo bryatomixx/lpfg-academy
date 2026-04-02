@@ -40,7 +40,7 @@ export default function S09Tools() {
               <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 hover:shadow-md transition-all duration-300 h-full flex flex-col shadow-sm">
                 <h3 className="text-[#1B2631] font-bold text-base mb-2">{t.name}</h3>
                 <p className="text-[#4A4A4A] text-xs leading-relaxed flex-1">{t.desc}</p>
-                <span className="mt-3 self-start text-xs bg-[#FEF9EE] text-[#C5A059] border border-[#C5A059]/30 px-2 py-0.5 rounded-full">
+                <span aria-label={`Proveedor: ${t.badge}`} className="mt-3 self-start text-xs bg-[#FEF9EE] text-[#C5A059] border border-[#C5A059]/30 px-2 py-0.5 rounded-full">
                   {t.badge}
                 </span>
               </div>

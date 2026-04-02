@@ -74,7 +74,7 @@ export default function S08Products() {
         <AnimatedSection>
           <div className="mt-8 bg-[#F3F4F6] border border-[#E5E7EB] rounded-2xl p-6 flex items-start gap-4 shadow-sm">
             <div className="w-8 h-8 rounded-lg bg-[#1B2631] flex items-center justify-center flex-shrink-0">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                 <circle cx="7" cy="7" r="5.5" stroke="white" strokeWidth="1.2"/>
                 <path d="M7 4v3.5h2.5" stroke="white" strokeWidth="1.2" strokeLinecap="round"/>
               </svg>
