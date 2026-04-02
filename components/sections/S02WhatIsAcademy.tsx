@@ -23,32 +23,38 @@ const advanced = [
 
 export default function S02WhatIsAcademy() {
   return (
-    <section id="academia" className="bg-[#071020] py-24 px-6">
+    <section id="academia" className="bg-[#F3F4F6] py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-16">
             <SectionLabel>Sobre esta academia</SectionLabel>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1B2631] mb-6">
               ¿Qué es esta academia?
             </h2>
-            <p className="text-white/50 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-[#4A4A4A] text-lg max-w-2xl mx-auto leading-relaxed">
               Esta no es la formación avanzada final. Es el mapa completo del negocio — diseñado para que entiendas cómo funciona todo antes de profundizar en cualquier tema.
             </p>
           </div>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <AnimatedSection>
-            <div className="bg-[#C9A84C]/5 border border-[#C9A84C]/20 rounded-3xl p-8">
-              <h3 className="font-bold text-[#C9A84C] text-xl mb-6 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-[#C9A84C] text-[#0A1628] flex items-center justify-center text-sm font-black">✓</span>
-                Esta academia cubre
-              </h3>
+            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-8 shadow-sm">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-8 h-8 rounded-lg bg-[#C5A059] flex items-center justify-center flex-shrink-0">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M2 7l3.5 3.5L12 3.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-[#1B2631] text-xl">Esta academia cubre</h3>
+              </div>
               <ul className="space-y-4">
                 {scope.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full border border-[#C9A84C]/40 flex items-center justify-center text-[#C9A84C] text-xs flex-shrink-0 mt-0.5 font-bold">{i + 1}</span>
-                    <span className="text-white/70 text-sm leading-relaxed">{item}</span>
+                    <span className="w-6 h-6 rounded-full bg-[#F3F4F6] border border-[#E5E7EB] flex items-center justify-center text-[#C5A059] text-xs font-bold flex-shrink-0 mt-0.5">
+                      {i + 1}
+                    </span>
+                    <span className="text-[#4A4A4A] text-sm leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -56,27 +62,31 @@ export default function S02WhatIsAcademy() {
           </AnimatedSection>
 
           <AnimatedSection>
-            <div className="bg-white/3 border border-white/8 rounded-3xl p-8">
-              <h3 className="font-bold text-white/80 text-xl mb-2 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-white/10 text-white/60 flex items-center justify-center text-sm font-black">→</span>
-                Después de esta base
-              </h3>
-              <p className="text-white/40 text-sm mb-6">Entrenamientos profundos por tema y producto:</p>
+            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-8 shadow-sm mb-6">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-8 h-8 rounded-lg bg-[#1B2631] flex items-center justify-center flex-shrink-0">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M7 2v10M2 7l5 5 5-5" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-[#1B2631] text-xl">Después de esta base</h3>
+              </div>
+              <p className="text-[#4A4A4A] text-sm mb-5 ml-11">Entrenamientos dedicados por tema y producto:</p>
               <ul className="space-y-3">
                 {advanced.map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-white/20 flex-shrink-0" />
-                    <span className="text-white/50 text-sm">{item}</span>
-                    <span className="ml-auto text-xs text-white/20 bg-white/5 px-2 py-0.5 rounded-full flex-shrink-0">Próximo</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#D1D5DB] flex-shrink-0" />
+                    <span className="text-[#4A4A4A] text-sm flex-1">{item}</span>
+                    <span className="text-xs text-[#9CA3AF] bg-[#F3F4F6] border border-[#E5E7EB] px-2 py-0.5 rounded-full flex-shrink-0">Próximo</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="mt-6 bg-[#C9A84C] rounded-2xl p-6 text-center">
-              <p className="font-bold text-[#0A1628] text-base">
-                &ldquo;Esta academia es la base.<br />
-                <span className="font-black">La profundidad viene después, por tema y por producto.&rdquo;</span>
+            <div className="bg-[#1B2631] rounded-2xl p-6 text-center">
+              <p className="font-bold text-white text-base leading-relaxed">
+                &ldquo;Esta academia es la base.{' '}
+                <span className="text-[#C5A059]">La profundidad viene después, por tema y por producto.&rdquo;</span>
               </p>
             </div>
           </AnimatedSection>
