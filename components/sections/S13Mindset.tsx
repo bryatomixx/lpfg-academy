@@ -12,18 +12,18 @@ const habits = [
 
 export default function S13Mindset() {
   return (
-    <section id="mentalidad" className="bg-[#0A1628] py-24 px-6">
+    <section id="mentalidad" className="bg-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-16">
             <SectionLabel>Mentalidad empresarial</SectionLabel>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              En LPFG no solo desarrollamos agentes.
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1B2631] mb-2">
+              No solo desarrollamos agentes.
             </h2>
-            <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#C5A059] mb-8">
               Desarrollamos empresarios.
             </h2>
-            <p className="text-white/50 text-lg max-w-2xl mx-auto">
+            <p className="text-[#4A4A4A] text-lg max-w-2xl mx-auto">
               La diferencia entre el agente promedio y el que construye algo duradero está en la mentalidad con la que opera.
             </p>
           </div>
@@ -32,19 +32,19 @@ export default function S13Mindset() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {habits.map((h) => (
             <AnimatedSection key={h.n}>
-              <div className="bg-white/3 border border-white/8 rounded-2xl p-7 hover:border-[#C9A84C]/25 hover:bg-[#C9A84C]/4 transition-all duration-300 h-full">
-                <span className="text-[#C9A84C]/30 font-black text-5xl block mb-3">{h.n}</span>
-                <h3 className="text-white font-bold text-base mb-3">{h.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{h.desc}</p>
+              <div className="bg-white border border-[#E5E7EB] rounded-2xl p-7 hover:shadow-md transition-all duration-300 h-full shadow-sm">
+                <span className="text-[#C5A059]/25 font-black text-5xl block mb-3">{h.n}</span>
+                <h3 className="text-[#1B2631] font-bold text-base mb-3">{h.title}</h3>
+                <p className="text-[#4A4A4A] text-sm leading-relaxed">{h.desc}</p>
               </div>
             </AnimatedSection>
           ))}
         </div>
 
         <AnimatedSection>
-          <div className="bg-[#C9A84C]/8 border border-[#C9A84C]/20 rounded-2xl p-6">
-            <p className="text-white/50 text-sm leading-relaxed text-center">
-              <strong className="text-[#C9A84C]">Nota importante:</strong> Toda implementación fiscal, contributiva o legal — incluyendo decisiones sobre LLC, S-Corp, deducciones y estructura de negocio — debe validarse con un CPA o profesional licenciado. Este contenido es de carácter educativo general y no constituye asesoría profesional.
+          <div className="bg-[#F3F4F6] border border-[#E5E7EB] rounded-2xl p-6">
+            <p className="text-[#4A4A4A] text-sm leading-relaxed text-center">
+              <strong className="text-[#1B2631]">Nota importante:</strong> Toda implementación fiscal, contributiva o legal — incluyendo decisiones sobre LLC, S-Corp, deducciones y estructura de negocio — debe validarse con un CPA o profesional licenciado. Este contenido es de carácter educativo general y no constituye asesoría profesional.
             </p>
           </div>
         </AnimatedSection>
