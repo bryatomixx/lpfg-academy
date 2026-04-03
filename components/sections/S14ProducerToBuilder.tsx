@@ -13,38 +13,41 @@ const stages = [
 
 export default function S14ProducerToBuilder() {
   return (
-    <section id="constructor" className="bg-[#071020] py-24 px-6">
+    <section id="constructor" className="bg-[#1B2631] py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <AnimatedSection>
           <div className="text-center mb-16">
             <SectionLabel>El ascenso natural</SectionLabel>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">De Productor a Constructor</h2>
-            <p className="text-white/50 text-lg max-w-xl mx-auto">
+            <p className="text-white/60 text-lg max-w-xl mx-auto">
               El camino al liderazgo no es un atajo — es una progresión natural que empieza siempre en el mismo lugar.
             </p>
           </div>
         </AnimatedSection>
 
         <div className="relative">
-          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-[#C9A84C] via-[#C9A84C]/40 to-transparent" />
-          <div className="space-y-6">
+          <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-[#C5A059] via-[#C5A059]/40 to-transparent" />
+          <div className="space-y-5">
             {stages.map((s, i) => (
               <AnimatedSection key={s.n}>
                 <div className="relative flex items-start gap-6 pl-16">
-                  <div className={`absolute left-0 w-12 h-12 rounded-full border-2 flex items-center justify-center font-black text-sm flex-shrink-0
-                    ${s.active
-                      ? 'bg-[#C9A84C] border-[#C9A84C] text-[#0A1628]'
+                  <div className={`absolute left-0 w-12 h-12 rounded-full border-2 flex items-center justify-center font-black text-sm flex-shrink-0 ${
+                    s.active
+                      ? 'bg-[#C5A059] border-[#C5A059] text-white'
                       : i < 3
-                        ? 'bg-[#C9A84C]/20 border-[#C9A84C]/50 text-[#C9A84C]'
+                        ? 'bg-[#C5A059]/15 border-[#C5A059]/40 text-[#C5A059]'
                         : 'bg-white/5 border-white/15 text-white/30'
-                    }`}
-                  >
+                  }`}>
                     {s.n}
                   </div>
-                  <div className={`bg-white/3 border rounded-2xl p-6 flex-1 transition-all duration-300
-                    ${s.active ? 'border-[#C9A84C]/40 bg-[#C9A84C]/8' : 'border-white/8 hover:border-[#C9A84C]/20'}`}
-                  >
-                    <h3 className={`font-bold text-base mb-1 ${s.active ? 'text-[#C9A84C]' : 'text-white'}`}>{s.title}</h3>
+                  <div className={`border rounded-2xl p-5 flex-1 ${
+                    s.active
+                      ? 'border-[#C5A059]/40 bg-[#C5A059]/10'
+                      : 'border-white/10 bg-white/5'
+                  }`}>
+                    <h3 className={`font-bold text-base mb-1 ${s.active ? 'text-[#C5A059]' : 'text-white'}`}>
+                      {s.title}
+                    </h3>
                     <p className="text-white/50 text-sm leading-relaxed">{s.desc}</p>
                   </div>
                 </div>
@@ -54,9 +57,9 @@ export default function S14ProducerToBuilder() {
         </div>
 
         <AnimatedSection>
-          <div className="mt-12 bg-[#C9A84C] rounded-3xl p-8 text-center">
-            <p className="text-[#0A1628] font-bold text-xl">
-              &ldquo;No buscamos reclutadores vacíos.<br />
+          <div className="mt-12 bg-[#C5A059] rounded-2xl p-8 text-center">
+            <p className="text-white font-bold text-xl">
+              &ldquo;No buscamos reclutadores vacíos.{' '}
               <strong className="font-black">Buscamos productores que se convierten en líderes.&rdquo;</strong>
             </p>
           </div>
