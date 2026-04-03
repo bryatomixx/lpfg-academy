@@ -42,7 +42,7 @@ export default function S11WhyTheyFail() {
           <AnimatedSection>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
               <h3 className="text-white font-bold text-xl mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-red-500/20 border border-red-500/30 text-red-400 flex items-center justify-center text-sm font-black flex-shrink-0">
+                <span aria-hidden="true" className="w-8 h-8 rounded-lg bg-red-500/20 border border-red-500/30 text-red-400 flex items-center justify-center text-sm font-black flex-shrink-0">
                   ✗
                 </span>
                 Razones comunes de fracaso
@@ -61,7 +61,7 @@ export default function S11WhyTheyFail() {
           <AnimatedSection>
             <div className="bg-[#C5A059]/10 border border-[#C5A059]/25 rounded-2xl p-8">
               <h3 className="text-[#C5A059] font-bold text-xl mb-6 flex items-center gap-3">
-                <span className="w-8 h-8 rounded-lg bg-[#C5A059] text-white flex items-center justify-center text-sm font-black flex-shrink-0">
+                <span aria-hidden="true" className="w-8 h-8 rounded-lg bg-[#C5A059] text-white flex items-center justify-center text-sm font-black flex-shrink-0">
                   ✓
                 </span>
                 Cómo LPFG lo corrige
